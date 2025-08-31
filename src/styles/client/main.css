@@ -1,0 +1,51 @@
+.truncate2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.truncate3 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+.transition {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    align-items: center;
+    height: 35px;
+    overflow-x: auto;
+    background: none;
+}
+
+.transition .button-transition {
+    border-radius: 100px;
+    width: 35px;
+    height: 35px;
+    outline: none;
+}
+.inLoading {
+  margin: 100px 0px !important;
+}
+.button-filter {
+  width: 35px !important;
+  height: 35px !important;
+  padding: 0 !important;
+  border-radius: 50% !important;
+}
+.home-heading {
+  font-size: 40px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center !important;
+}
+
+.home-heading div {
+  margin-bottom: 25px;
+  font-weight: 600;
+  color: #353535;
+  font-family: 'Inter', sans-serif;
+}

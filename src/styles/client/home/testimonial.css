@@ -1,0 +1,85 @@
+.testimonial-nav {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.testimonial-nav .ant-btn {
+  transition: all 0.3s ease;
+}
+
+.testimonial-nav .ant-btn:hover {
+  background: #3ba9f0;
+  color: #fff;
+  border-color: #3ba9f0;
+}
+
+.testimonial-section {
+  padding: 60px 20px;
+}
+.testimonial-section .swiper-pagination {
+  position: relative;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.testimonial-title {
+  margin-bottom: 40px;
+  justify-content: center;
+  display: flex;
+}
+.testimonial-card {
+  height: 280px !important;
+  display: flex !important;
+  align-items: center !important;
+}
+.testimonial-card .ant-card {
+  width: 600px;
+  height: 230px;
+  margin: 0 auto;
+  padding: 15px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+.testimonial-avatar {
+  width: 70px !important;
+  height: 70px !important;
+}
+.testimonial-quote {
+  font-size: 15px;
+  display: block;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.testimonial-author {
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+.testimonial-role {
+  color: #3ba9f0;
+  font-size: 13px;
+}
+
+/* Tùy chỉnh dot của Carousel */
+.ant-carousel .slick-dots-bottom {
+  bottom: -30px;
+}
+
+.ant-carousel .slick-dots li button {
+  background: #ccc;
+  border-radius: 50%;
+}
+
+.ant-carousel .slick-dots li.slick-active button {
+  background: #3ba9f0;
+}
+@media (max-width: 768px) {
+  .testimonial-card .ant-card {
+    width: 400px !important;
+  }
+}

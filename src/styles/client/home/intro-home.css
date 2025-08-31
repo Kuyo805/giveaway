@@ -1,0 +1,119 @@
+/* intro-home.css */
+
+.intro-container {
+    position: relative;
+    padding: 80px 120px 0px 120px;
+    background-color: #fff; 
+    overflow: hidden; 
+}
+.intro-title span {
+  display: "inline-block"
+}
+
+/* Nền tam giác bên trái */
+.intro-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0; 
+    width: 60%;
+    height: 100%;
+    background: url('/image/general/background.jpg') no-repeat center center / cover;
+    clip-path: polygon(0 0, 100% 0, 0 100%); 
+    z-index: 0;
+}
+
+.intro-container > * {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* Nội dung nằm trên */
+.intro-container > * {
+    position: relative;
+    z-index: 1;
+}
+
+.intro-title {
+    color: #000 !important;
+    margin: 0 0 24px 0 !important;
+    line-height: 1.2 !important;
+}
+
+.intro-description {
+    font-size: 22px !important;
+    font-weight: 400 !important;
+    color: #666 !important;
+    margin: 0 0 20px 0 !important;
+    line-height: 1.6 !important;
+}
+.intro-button {
+    display: flex;
+    justify-content: center;
+}
+.intro-button .ant-btn {
+    margin-top: 40px;
+    background: #1890ff !important;
+    border-color: #1890ff !important;
+    border-radius: 40px !important;
+    padding: 12px 24px !important;
+    height: 45px !important;
+    width: 190px !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    outline: none !important;
+}
+
+.intro-button .ant-btn:hover {
+    background: #40a9ff !important;
+    border-color: #40a9ff !important;
+}
+
+.intro-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-image img {
+    object-fit: contain;
+    border-radius: 50%;
+    border: 8px solid #ffffff;
+    width: 450px;
+    height: 450px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive for Intro */
+@media (max-width: 1200px) {
+    .intro-image img {
+        width: 100%;
+        height: 100%;
+    }
+    .intro-description {
+        font-size: 20px !important;
+    }
+    .intro-title {
+        font-size: 36px !important;
+    }
+}
+
+@media (max-width: 573px) {
+    .intro-container {
+        padding: 100px 20px 0px 20px;
+    }
+
+    .intro-title {
+        font-size: 28px !important;
+    }
+
+    .intro-image {
+        padding: 20px 0;
+        display: none;
+    }
+    .intro-container::after {
+        width: 100%;
+    }
+}
+

@@ -1,0 +1,50 @@
+[
+  {
+    "_id": "68a6d8bc84661ddbea3d5257",
+    "title": "Hệ điều hành: Người điều khiển thầm lặng",
+    "slug": "he-dieu-hanh-nguoi-dieu-khien-tham-lang",
+    "thumbnail": "https://media.hswstatic.com/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL2NvbXB1dGVyLW9wZXJhdGluZy1zeXRlbS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjgyOH19fQ==",
+    "position": 2,
+    "status": "active",
+    "introduction": "Khi mà làn sóng nội dung về AI đang tràn ngập ngoài kia thì có một mảnh ghép thầm lặng: hệ điều hành.",
+    "content": "<p>Hệ điều hành là nền tảng giúp máy tính vận hành trơn tru...</p>",
+    "tags": ["Hệ điều hành"],
+    "outstand": true
+  },
+  {
+    "_id": "68a6d8bc84661ddbea3d5258",
+    "title": "AI và tương lai công việc",
+    "slug": "ai-va-tuong-lai-cong-viec",
+    "thumbnail": "https://images.unsplash.com/photo-1526779259212-939e64788e3c?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZnJlZSUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D",
+    "position": 1,
+    "status": "active",
+    "introduction": "Trí tuệ nhân tạo không chỉ thay đổi cách chúng ta làm việc, mà còn định hình cả thị trường lao động.",
+    "content": "<p>Các mô hình AI ngày càng thông minh hơn, từ đó mở ra cơ hội...</p>",
+    "tags": ["AI", "Công nghệ"],
+    "outstand": true
+  },
+  {
+    "_id": "68a6d8bc84661ddbea3d5259",
+    "title": "Lập trình Backend: Nền móng của mọi ứng dụng",
+    "slug": "lap-trinh-backend-nen-mong-cua-moi-ung-dung",
+    "thumbnail": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D",
+    "position": 3,
+    "status": "active",
+    "introduction": "Đằng sau mỗi ứng dụng mượt mà là hàng ngàn dòng code backend vận hành bền bỉ.",
+    "content": "<p>Backend là bộ não giúp xử lý dữ liệu, xác thực người dùng...</p>",
+    "tags": ["Backend", "Lập trình"],
+    "outstand": false
+  },
+  {
+    "_id": "68a6d8bc84661ddbea3d5260",
+    "title": "UX Design: Khi trải nghiệm quan trọng hơn giao diện",
+    "slug": "ux-design-khi-trai-nghiem-quan-trong-hon-giao-dien",
+    "thumbnail": "https://img.freepik.com/free-photo/amazing-tiger-nature-habitat-tiger-pose-golden-light-time-wildlife-scene-with-danger-animal-hot-summer-india-dry-area-with-beautiful-indian-tiger_475641-1521.jpg?semt=ais_hybrid&w=740&q=80",
+    "position": 4,
+    "status": "active",
+    "introduction": "Người dùng không chỉ nhìn vào giao diện, họ cảm nhận trải nghiệm.",
+    "content": "<p>UX Design giúp tối ưu hành trình người dùng, mang lại sự hài lòng...</p>",
+    "tags": ["UX", "Thiết kế"],
+    "outstand": true
+  }
+]

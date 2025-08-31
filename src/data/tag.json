@@ -1,0 +1,12 @@
+{
+  "tags": [
+    { "label": "Notes", "value": "Notes"},
+    { "label": "Hệ điều hành", "value": "Hệ điều hành" },
+    { "label": "Mạng máy tính", "value": "Mạng máy tính" },
+    { "label": "Database", "value": "Database" },
+    { "label": "Bảo mật", "value": "Bảo mật" },
+    { "label": "OOP", "value": "OOP" },
+    { "label": "Cấu trúc dữ liệu", "value": "Cấu trúc dữ liệu" },
+    { "label": "Giải thuật", "value": "Giải thuật" }
+  ]
+}
