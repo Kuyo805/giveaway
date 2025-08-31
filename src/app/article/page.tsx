@@ -1,24 +1,27 @@
 'use client';
 
-import { Row, Col, Typography, Button, Input, Dropdown, Pagination, Spin, notification } from 'antd';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
+import { Row, Col, Typography, Button, Input, Pagination, Spin, notification } from 'antd';
+
+import '@/styles/client/main.css';
+import '@/styles/client/article/article-home.css';
 import ArticleStyle from '@/styles/client/home/articleHighlight.module.css';
 import OverrideStyle from '@/styles/client/article/overrideHighlight.module.css';
-import '@/styles/client/article/article-home.css';
-import '@/styles/client/main.css';
 import ProductStyle from '@/styles/client/product/product.module.css';
+
 import ArticleHighlight from '@/components/client/Article';
 import ProductCard from '@/components/client/ProductCard';
-import { FaFilter } from 'react-icons/fa';
-import { TbArrowsSort } from 'react-icons/tb';
+import SubscribeCard from '@/components/client/SubscribeCard';
+
 import productsData from '@/data/products.json';
 import articlesData from '@/data/articles.json';
-import SubscribeCard from '@/components/client/SubscribeCard';
-import tagConfig from '@/data/tag.json';
+
 const { Title, Paragraph } = Typography;
+
 const newStyle = { ...ArticleStyle, ...OverrideStyle };
 const PAGE_SIZE = 5;
+
 
 export default function Home() {
   const router = useRouter();

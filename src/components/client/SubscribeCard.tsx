@@ -4,7 +4,6 @@ import AOS from 'aos';
 import { useEffect } from 'react';
 import { NotificationInstance } from 'antd/es/notification/interface';
 import { FaBell } from 'react-icons/fa';
-import axios from 'axios';
 
 const { Title } = Typography;
 
@@ -16,15 +15,6 @@ const SubscribeCard: React.FC<Props> = ({ api }: Props) => {
   useEffect(() => {
     AOS.init();
   }, []);
-
-  const handleSubscribe = async (email: string) => {
-    try {
-      const res = await axios.post(`${process.env.NEXT_PUBLIC_API_GET}/subscribe`, { email });
-      api.success({message: res.data.message || 'Đăng ký thành công!', placement: 'topRight', duration: 3 });
-    } catch (err: any) {
-      api.error({message: 'Lỗi', description: err.response?.data?.error || 'Không thể đăng ký', placement: 'topRight', duration: 3, });
-    }
-  };
 
   return (
     <div
@@ -38,7 +28,6 @@ const SubscribeCard: React.FC<Props> = ({ api }: Props) => {
 
         <Form
           layout="inline"
-          onFinish={(values) => handleSubscribe(values.email)}
           style={{ justifyContent: 'center', marginTop: 20 }}
         >
           <div className="newsletter-receiver">
