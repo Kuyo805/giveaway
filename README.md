@@ -1,101 +1,59 @@
-# MyResume Frontend (Next.js)
+# Hướng Dẫn Chạy Dự Án Next.js
 
-Dự án frontend được chuyển đổi từ React sang Next.js với TypeScript.
+Chào mừng bạn đến với dự án Next.js! Dưới đây là hướng dẫn từng bước để thiết lập và chạy dự án trên máy tính của bạn.
 
-## Tính năng
+## Yêu Cầu Hệ Thống
 
-- **Client Pages**: Trang chủ, sản phẩm với UI hiện đại
-- **Admin Panel**: Quản lý bài viết, người dùng với giao diện admin
-- **Authentication**: Hệ thống đăng nhập cho admin
-- **Responsive Design**: Tương thích với mọi thiết bị
-- **Redux State Management**: Quản lý state toàn cục
-- **Ant Design**: UI components hiện đại
+- **Node.js**: Phiên bản 18.x hoặc cao hơn. Bạn có thể tải tại [nodejs.org](https://nodejs.org).
+- **npm** hoặc **yarn**: npm được cài sẵn với Node.js, hoặc bạn có thể cài yarn bằng lệnh `npm install -g yarn`.
+- Một trình chỉnh sửa mã nguồn như Visual Studio Code (khuyến nghị).
 
-## Cấu trúc dự án
+## Hướng Dẫn Cài Đặt
 
-```
-src/app/
-├── components/          # Shared components
-├── config/             # API configuration
-├── types/              # TypeScript types
-├── redux/              # Redux store và actions
-├── client/             # Client pages
-│   ├── layout.tsx      # Client layout
-│   ├── page.tsx        # Home page
-│   ├── product/        # Product page
-│   └── home/           # Home page styles
-├── admin/              # Admin pages
-│   ├── layout.tsx      # Admin layout
-│   ├── page.tsx        # Admin dashboard
-│   ├── auth/           # Authentication
-│   ├── article/        # Article management
-│   └── user/           # User management
-└── globals.css         # Global styles
-```
+1. **Clone Repository**
+   - Clone dự án về máy tính của bạn bằng lệnh:
+     ```bash
+     git clone https://github.com/Kuyo805/giveaway
+     cd giveaway
+     ```
 
-## Cài đặt
+2. **Cài Đặt Các Phụ Thuộc**
+   - Chạy lệnh sau để cài đặt các gói phụ thuộc:
+     ```bash
+     npm install
+     ```
+     Hoặc nếu dùng yarn:
+     ```bash
+     yarn install
+     ```
 
-1. Cài đặt dependencies:
-```bash
-npm install
-```
+3. **Chạy Dự Án Ở Chế Độ Phát Triển**
+   - Chạy lệnh sau để khởi động server phát triển:
+     ```bash
+     npm run dev
+     ```
+     Hoặc với yarn:
+     ```bash
+     yarn dev
+     ```
+   - Mở trình duyệt và truy cập `http://localhost:3000` để xem ứng dụng.
 
-2. Tạo file `.env.local`:
-```env
-NEXT_PUBLIC_API_URL=http://localhost:8080
-```
+## Giải Quyết Sự Cố
 
-3. Chạy development server:
-```bash
-npm run dev
-```
+- **Lỗi "Node.js version không tương thích"**: Đảm bảo bạn đang dùng phiên bản Node.js được yêu cầu (18.x hoặc cao hơn). Kiểm tra bằng lệnh:
+  ```bash
+  node -v
+  ```
+- **Lỗi thiếu phụ thuộc**: Xóa thư mục `node_modules` và file `package-lock.json` (hoặc `ទ
+`yarn.lock`), sau đó chạy lại `npm install` hoặc `yarn install`.
+- **Không truy cập được localhost:3000**: Kiểm tra xem port 3000 có đang được sử dụng bởi ứng dụng khác không. Bạn có thể đổi port bằng cách thêm biến môi trường `PORT` trong `.env.local`.
 
-4. Build cho production:
-```bash
-npm run build
-```
+## Liên Hệ
 
-## Routing
+Bạn có thể kết nối với tôi qua:
 
-### Client Routes
-- `/` - Redirect to `/client`
-- `/client` - Home page
-- `/client/product` - Product page
+- 💼 **LinkedIn**: [Võ Minh Quân](https://www.linkedin.com/in/v%C3%B5-minh-qu%C3%A2n-821704325/)
+- 📝 **Blog**: [Quan Notes](https://mquannotes.vercel.app)
+- 🌐 **Facebook**: [Minh Quân](https://www.facebook.com/quan.minh.780514/)
 
-### Admin Routes
-- `/admin` - Redirect to `/admin/article`
-- `/admin/auth/login` - Login page
-- `/admin/article` - Article management
-- `/admin/article/create` - Create article
-- `/admin/article/update` - Update article
-- `/admin/article/trash` - Trash management
-- `/admin/user` - User management
-
-## Technologies
-
-- **Next.js 15** - React framework
-- **TypeScript** - Type safety
-- **Ant Design** - UI components
-- **Redux Toolkit** - State management
-- **Axios** - HTTP client
-- **React Icons** - Icon library
-- **TinyMCE** - Rich text editor
-
-## Features
-
-- **Server-Side Rendering** với Next.js
-- **File-based Routing** tự động
-- **TypeScript** cho type safety
-- **Responsive Design** với Ant Design
-- **State Management** với Redux
-- **API Integration** với Axios
-- **Authentication** với JWT
-- **Rich Text Editor** với TinyMCE
-
-## Development
-
-Dự án sử dụng:
-- **ESLint** cho code linting
-- **TypeScript** cho type checking
-- **Next.js** cho development server và build
-- **Ant Design** cho UI components
+Cảm ơn bạn đã quan tâm đến dự án!
