@@ -26,7 +26,6 @@ import ArticleStyle from '@/styles/client/home/articleHighlight.module.css';
 
 // Components
 import ArticleHighlight from '@/components/client/Article';
-import Testimonials from '@/components/client/Testimonial';
 
 // Data & Redux & Utils
 import personal from '@/data/personal.json';
@@ -332,8 +331,6 @@ export default function Home() {
         </Spin>
         <SubscribeCard api={api}/>
       </div>
-        
-      <Testimonials />
 
       {/* Pricing Section */}
       <div className="pricing-container" data-aos="fade-up" data-aos-delay="100">
